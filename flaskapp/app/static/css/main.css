@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #444;
+	background-image: url('/static/images/background4.jpg');
+    background-size: cover;
+	background-attachment: fixed;
+
+  }
+   
+    
+  .container {
+	align: center;
+    text-align: center;
+    background-color: #c5d4da;
+    width: 940px;
+    margin: 0 auto;
+    border-width: 4px;
+    margin-top: 100px;
+	padding: 20px;
+  }
+
+  .container::before {
+
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.8;
+  }
+   
+  div.jumbo {
+    padding: 10px 0 30px 0;
+    background-color: #eeeeee;
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+            border-radius: 6px;
+  }
+   
+
+  h1 { 
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #001c33;
+    display: block;
+    font-size: 36px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+  h2 {
+    font-size: 2em;
+    margin-top: 40px;
+    text-align: center;
+    letter-spacing: -2px;
+  }
+   
+  h3 {
+    font-size: 1.7em;
+    font-weight: 100;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #999;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+form label {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: #405775;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  padding: 10px 0;
+}
+ 
+ 
+form input#seed {
+  height: 300px;
+  width: 700px;
+  background-color: #fafafa;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+  padding: 5px;
+  font-size: 24px;
+  margin: 12px;	
+}
+
+form input#diversity, form input#textType {
+  height: 30px;
+  width: 70px;
+  background-color: #fafafa;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+  padding: 5px;
+  font-size: 24px;
+  text-align: center;
+  margin: 12px;
+}
+ 
+form textarea#message {
+  width: 500px;
+  height: 100px;
+  background-color: #fafafa;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  border: 1px solid #cccccc;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 1.1em;
+}
+ 
+form input#submit {
+  height: 50px;
+  width: 200px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  -webkit-border-radius: 3px; 
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  border:1px solid #d8d8d8;
+  padding: 10px; 
+  font-weight:bold; 
+  font-size:22px;
+  text-align: center; 
+  color: #000000; 
+  background-color: #f4f4f4;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f4f4f4), color-stop(100%, #e5e5e5));
+  background-image: -webkit-linear-gradient(top, #f4f4f4, #e5e5e5);
+  background-image: -moz-linear-gradient(top, #f4f4f4, #e5e5e5);
+  background-image: -ms-linear-gradient(top, #f4f4f4, #e5e5e5);
+  background-image: -o-linear-gradient(top, #f4f4f4, #e5e5e5);
+  background-image: linear-gradient(top, #f4f4f4, #e5e5e5);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f4f4f4, endColorstr=#e5e5e5);
+}
+ 
+form input#submit:hover{
+  cursor: pointer;
+  border:1px solid #c1c1c1; 
+  background-color: #dbdbdb;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dbdbdb), color-stop(100%, #cccccc));
+  background-image: -webkit-linear-gradient(top, #dbdbdb, #cccccc);
+  background-image: -moz-linear-gradient(top, #dbdbdb, #cccccc);
+  background-image: -ms-linear-gradient(top, #dbdbdb, #cccccc);
+  background-image: -o-linear-gradient(top, #dbdbdb, #cccccc);
+  background-image: linear-gradient(top, #dbdbdb, #cccccc);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#dbdbdb, endColorstr=#cccccc);
+}
+
+/* Message flashing */
+.flash {
+    background-color: #FBB0B0;
+    padding: 10px;
+    width: 400px;
+    display: table;
+    margin: auto;
+  }
